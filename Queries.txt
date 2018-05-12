@@ -1,0 +1,19 @@
+type:query
+name:GetPassenger
+parameters:@ID
+text:select * from Passenger where ID_psg=@ID
+
+type:query
+name:GetPassengerID
+parameters:@ID
+text:select ID_psg from Passenger where ID_psg=@ID
+
+type:query
+name:GetCompany
+parameters:@ID
+text:select * from Company where ID_comp=@ID
+
+type:SP
+name:GetPassengerSP
+parameters:@ID
+text:SPPassenger
